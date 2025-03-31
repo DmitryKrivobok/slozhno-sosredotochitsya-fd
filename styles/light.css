@@ -47,13 +47,17 @@
   --footer-title-color: #FFC2E6;
 }
 
+.header {
+  background-image: var(--bg-image);
+}
+
 @media (prefers-color-scheme: light) {
   .header__rec {
     display: none;
   }
-  :root {
+  :root.theme-light {
   --bg-image: url(../images/cover-image-light.png);
-  --main-bg-color: #f1b2ce;
+  --main-bg-color: #FFF1F7;
   --main-text-color: #353430;
   --main-heading-color: #353430;
   --section-heading-color: #353430;

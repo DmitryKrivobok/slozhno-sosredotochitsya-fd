@@ -43,7 +43,7 @@
   font-weight: 400;
   text-align: center;
   line-height: 1;
-  letter-spacing: 0%;
+  letter-spacing: 0px;
   text-transform: lowercase;
   padding-right: 13px;
   padding-left: 13px;
@@ -76,6 +76,7 @@
 .header__text {
   font-size: var(--main-font-size);
   line-height: var(--main-line-height);
+  font-weight: 700;
 }
 
 .title-decor {
@@ -83,7 +84,7 @@
   color: var(--main-heading-color);
   display: block;
   block-size: fit-content;
-  inline-size: 100%;
+  width: 100%;
 }
 
 .decorated-zone::before {
@@ -151,6 +152,7 @@
   gap: 10px;
   font-size: var(--main-font-size);
   line-height: var(--main-line-height);
+  min-inline-size: 375px;
 }
 
 .section {
@@ -251,7 +253,6 @@
     padding: 20px;
     --main-gap: 20px;
     min-block-size: 1024px;
-    min-inline-size: 768px;
   }
   .header__rec::before {
     inset-block-start: 10px;
